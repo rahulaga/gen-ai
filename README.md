@@ -22,3 +22,10 @@ export OPENAI_API_KEY='sk...'
 python hello-openapi.py
 ```
 
+4. Hello world variation with a UI
+```
+python hello-openapi-gradio.py
+```
+Open in browser http://127.0.0.1:7860
+
+
