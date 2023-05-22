@@ -1,0 +1,6 @@
+gradio
+langchain
+openai
+#index local data
+llama_index
+pypdf2
