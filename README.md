@@ -29,7 +29,7 @@ python hello-openapi-gradio.py
 Open in browser http://127.0.0.1:7860
 
 ## A custom chatbot with OpenAI
-See [this blog for an overview and details]()
+See [this blog for an overview and details](https://rahulaga.medium.com/creating-a-custom-chatbot-with-openai-2e08b1e98133)
 
 1. Install the `requirements.txt`
 2. Index the custom data to create embeddings using LlamaIndex. I have PDF files in the `local-data` folder that it uses.
