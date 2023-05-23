@@ -22,10 +22,20 @@ export OPENAI_API_KEY='sk...'
 python hello-openapi.py
 ```
 
-4. Hello world variation with a UI
+4. Hello world variation with a UI using Gradio
 ```
 python hello-openapi-gradio.py
 ```
 Open in browser http://127.0.0.1:7860
 
+## A custom chatbot with OpenAI
+See [this blog for an overview and details]()
 
+1. Install the `requirements.txt`
+2. Index the custom data to create embeddings. I have PDF files in the `local_data` folder that it uses.
+```
+python build_index.py
+```
+The output is stored in the folder `local_index`
+
+3. Run the chatbot that will load the embeddings created and interact with it using LangChain
