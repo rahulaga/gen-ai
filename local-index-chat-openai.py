@@ -2,8 +2,11 @@ from llama_index import LLMPredictor, StorageContext, load_index_from_storage
 from llama_index.langchain_helpers.agents import LlamaToolkit, create_llama_chat_agent, IndexToolConfig
 from langchain.chains.conversation.memory import ConversationBufferMemory
 from langchain.chat_models import ChatOpenAI
-
+import langchain
 import gradio as gr
+
+#debug
+langchain.debug=False
 
 #llm
 llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo", max_tokens=1024)
