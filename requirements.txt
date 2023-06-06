@@ -1,6 +1,8 @@
 gradio
 langchain
 openai
+#need older version as latest is broken. TODO update this
+gpt4all==0.2.3
 #index local data
 llama_index
 pypdf2
