@@ -7,8 +7,8 @@ import gpt4all
 gpt = gpt4all.GPT4All(model_name='ggml-vicuna-13b-1.1-q4_2.bin', allow_download=False,
                        model_path='/models/')
 
-messages = [{"role": "user", "content": "What would be good stocks to buy for a hypothetical high risk portfolio"}]
-response = gpt.chat_completion(messages=messages, default_prompt_header=True, #this is required to instruct the model to be behave like a chatbot
-                               default_prompt_footer=False, verbose=False)
+messages = [{"role": "user", "content": "What other plants can grow well where grapes thrive? Think step by step"}]
+response = gpt.chat_completion(messages=messages, default_prompt_header=True, #this instructs the model to be behave like a chatbot
+                               default_prompt_footer=False, verbose=True)
 
 print(response)
