@@ -19,6 +19,10 @@ export OPENAI_API_KEY='sk...'
 
 3. Run the hello-world and it should give you some stock recommendations
 ```
+This one uses openai library directly
+python hello-openai.py 
+
+This is via LangChain - used next
 python hello-openapi.py
 ```
 
@@ -44,3 +48,11 @@ python local-index-chat.py
 ```
 Open in browser http://127.0.0.1:7860
 
+## Local LLM with GPT4All
+Locally on CPU only (no GPU) it is possible to run some models thanks to GPT4All. It works but relatively slow on my machine. There is no support to generate embeddings as of now.
+1. Install the `requirements.txt`
+2. Get a model from gpt4all.io or hugging faces. Modify `hello-gpt4all.py` to point to the correct path you downloaded the model.
+
+```
+python hello-gpt4all.py
+```
