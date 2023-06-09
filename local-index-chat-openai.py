@@ -22,8 +22,8 @@ query_engine = index.as_query_engine()
 # tool config
 tool_config = IndexToolConfig(
     query_engine=query_engine,
-    name="Local Index",
-    description="Local docs",
+    name="VMware Index",
+    description="Documents about VMware cloud services and cloud partner navigator",
     tool_kwargs={"return_direct": True}
 )
 
