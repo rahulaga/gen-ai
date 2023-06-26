@@ -56,3 +56,25 @@ Locally on CPU only (no GPU) it is possible to run some models thanks to GPT4All
 ```
 python hello-gpt4all.py
 ```
+
+## A custom chatbot with Azure OpenAI
+See [this blog for an overview and details]()
+
+1. Install the `requirements.txt`
+2. Setup your Azure OpenAI Studio and create a deployment. This will give you an API key and Base URL. Simple way for testing is to set env variable.
+```
+See the "Manage keys" and "Endpoint" as shown in the Azure portal.
+export AZURE_API_KEY='abc...'
+export AZURE_API_BASE='https://...'
+``` 
+3. Index the custom data to create embeddings using LlamaIndex. I have PDF files in the `local-data` folder that it uses.
+```
+python build_index_azure.py
+```
+The output is stored in the folder `local-index-azure`
+
+4. Run the chatbot that will load the embeddings created and interact with it using LangChain
+```
+python local-index-chat-azure.py
+```
+Open in browser http://127.0.0.1:7860
