@@ -58,7 +58,7 @@ python hello-gpt4all.py
 ```
 
 ## A custom chatbot with Azure OpenAI
-See [this blog for an overview and details]()
+See [this blog for an overview and details](https://rahulaga.medium.com/using-azure-openai-for-a-custom-chatbot-2479fd9115f8)
 
 1. Install the `requirements.txt`
 2. Setup your Azure OpenAI Studio and create a deployment. This will give you an API key and Base URL. Simple way for testing is to set env variable.
