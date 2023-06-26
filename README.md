@@ -38,13 +38,13 @@ See [this blog for an overview and details](https://rahulaga.medium.com/creating
 1. Install the `requirements.txt`
 2. Index the custom data to create embeddings using LlamaIndex. I have PDF files in the `local-data` folder that it uses.
 ```
-python build_index.py
+python build_index_openai.py
 ```
 The output is stored in the folder `local-index`
 
 3. Run the chatbot that will load the embeddings created and interact with it using LangChain
 ```
-python local-index-chat.py
+python local-index-chat-openai.py
 ```
 Open in browser http://127.0.0.1:7860
 
